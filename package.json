@@ -22,7 +22,8 @@
   "devDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "@babel/plugin-transform-modules-commonjs": "^7.16.5"
   },
   "browserslist": {
     "development": [
