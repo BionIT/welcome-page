@@ -1,27 +1,30 @@
 {
-  "name": "welcome-page",
-  "version": "2.4.0",
+  "name": "@opensearch-dashboards/homepage",
+  "version": "1.0.0",
   "description": "OpenSearch Dashboards Welcome Page",
   "main": "index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BionIT/welcome-page.git"
+  },
   "scripts": {
     "opensearch": "node ../../scripts/opensearch",
     "osd": "node ../../scripts/osd",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "dependencies": {
+  },
+  "homepage": "https://github.com/BionIT/welcome-page",
+  "devDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1"
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",

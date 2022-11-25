@@ -1,3 +1,1 @@
-import App from './app';
-
-module.exports = App;
+export { App } from './src/lib/app';
