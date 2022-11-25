@@ -2,8 +2,9 @@
   "name": "@opensearch-dashboards/homepage",
   "version": "1.0.0",
   "description": "OpenSearch Dashboards Welcome Page",
-  "main": "index.js",
-  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": ["dist", "README.md"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BionIT/welcome-page.git"
@@ -16,14 +17,17 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "homepage": "https://github.com/BionIT/welcome-page",
   "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "npm-run-all": "^4.1.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "@babel/plugin-transform-modules-commonjs": "^7.16.5"
+    "react-scripts": "5.0.1"
   },
   "browserslist": {
     "development": [
