@@ -23,23 +23,15 @@ function App() {
     body: /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
       children: "OpenSearch Playground serves as a live demo environment of OpenSearch and OpenSearch Dashboards where you can explore OpenSearch"
     }),
-    actions: /*#__PURE__*/(0, _jsxRuntime.jsx)(_eui.EuiButton, {
+    actions: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_eui.EuiButton, {
       color: "primary",
       fill: true,
       children: "Explore"
-    }),
-    footer: /*#__PURE__*/(0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
-      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_eui.EuiTitle, {
-        size: "xxs",
-        children: /*#__PURE__*/(0, _jsxRuntime.jsx)("h3", {
-          children: "Want to learn more?"
-        })
-      }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_eui.EuiLink, {
-        href: "https://github.com/opensearch-project/dashboards-anywhere",
-        target: "_blank",
-        children: "Checkout the code base"
-      })]
-    })
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_eui.EuiLink, {
+      href: "https://github.com/opensearch-project/dashboards-anywhere",
+      target: "_blank",
+      children: "Checkout our code base"
+    })]
   });
 }
 var _default = App;
